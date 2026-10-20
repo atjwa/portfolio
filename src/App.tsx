@@ -1,6 +1,41 @@
+import { useEffect, useState } from 'react';
 import './App.css'
+import {
+  Education,
+  Experience,
+  Skills,
+  Footer,
+  Highlights,
+} from './pages'
+import { PageNames } from './utility/pageNames';
+import type { PageName } from './utility/pageNames';
+import type { PageProps } from './utility/propTypes';
 
 function App() {
+  const [pageName, setPageName] = useState<PageName>(PageNames.Highlights);
+  const pageProps: PageProps = {
+    setPageName: setPageName,
+  }
+  const [currentPage, setCurrentPage] = useState(<Highlights {...pageProps}/>);
+
+  useEffect(() => {
+    switch ( pageName ) {
+        case PageNames.Highlights:
+            setCurrentPage(<Highlights {...pageProps} />);
+            break;
+        case PageNames.Skills:
+            setCurrentPage(<Skills {...pageProps} />);
+            break;
+        case PageNames.Education:
+            setCurrentPage(<Education {...pageProps} />);
+            break;
+        case PageNames.Experience:
+            setCurrentPage(<Experience {...pageProps} />);
+            break;
+        default:
+            setCurrentPage(<Highlights {...pageProps} />);
+    }
+  }, [pageName]);
 
   return (
     <main>
@@ -10,115 +45,14 @@ function App() {
         <h1>
             Full Stack Web Developer
         </h1>
-        <img src="./images/athan_walker.jpeg" alt="Athan Walkeer" width="210" height="230"/>
+        <img src="src/images/athan_walker.jpeg" alt="Athan Walker" width="210" height="230"/>
         <p>
             Frontend-leaning software engineer with backend REST API experience. I'm passionate about building durable, user-friendly and modern web applications.
         </p>
         <hr />
-        <article className="mainArticle">
-            <section className="mainSectionLeft">
-                <h2>
-                    <ins>Skills</ins>
-                </h2>
-                <dl>
-                    <dt>
-                        Languages
-                    </dt>
-                    <dd>
-                        JavaScript, TypeScript, Java
-                    </dd>
-                    <dt>
-                        Frontend
-                    </dt>
-                    <dd>
-                        React, Redux, HTML, CSS, WCAG, WAI-ARIA
-                    </dd>
-                    <dt>
-                        Backend
-                    </dt>
-                    <dd>
-                        REST API design, JWT-based authentication, business logic
-                    </dd>
-                    <dt>
-                        Development Tools
-                    </dt>
-                    <dd>
-                        Git, GitHub, GitHub Copilot, Cursor, Jira, Confluence, Postman
-                    </dd>
-                </dl>
-            </section>
-            <section className="mainSectionCenter">
-                <h2>
-                    <ins>Experience</ins>
-                </h2>
-                <h3>
-                    Software Engineer III
-                    <br />
-                    <small>
-                        @ American Express
-                    </small>
-                </h3>
-                <dl>
-                    <dt>
-                        Developments
-                    </dt>
-                    <ul>
-                        <li>
-                            Internal applications for onboarding middle to large corporate clients
-                        </li>
-                        <li>
-                            Client facing portal for corporate clients to manage their accounts
-                        </li>
-                    </ul>
-                    <dt>
-                        Languages
-                    </dt>
-                    <dd>
-                        JavaScript, TypeScript, Java
-                    </dd>
-                </dl>
-            </section>
-            <section className="mainSectionRight">
-                <h2>
-                    <ins>Education</ins>
-                </h2>
-                <dl>
-                    <dt>
-                        Master of Science in Computer Science
-                    </dt>
-                    <dd>
-                        University of Arizona
-                    </dd>
-                    <dd>
-                        August 2020 - May 2022
-                    </dd>
-                </dl>
-                  <dl>
-                    <dt>
-                        Bachelor of Science in Computer Science
-                    </dt>
-                    <dd>
-                        University of Arizona
-                    </dd>
-                    <dd>
-                        August 2016 - May 2020
-                    </dd>
-                </dl>
-            </section>
-        </article>
-        <hr/>
-        <section className="footer">
-            <h2>
-                <ins>Contact me</ins>
-            </h2>
-            <span>
-                Email:  athanjwalker@gmail.com
-            </span>
-            <br />
-            <span>
-                <a href="https://www.linkedin.com/in/athan-walker/" target="_blank">LinkedIn</a>
-            </span>
-        </section>
+        {currentPage}
+        <hr />
+        <Footer />
     </main>
   )
 }

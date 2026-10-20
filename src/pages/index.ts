@@ -1,0 +1,5 @@
+export { default as Education } from './Education'
+export { default as Experience } from './Experience'
+export { default as Footer } from './Footer'
+export { default as Highlights } from './Highlights'
+export { default as Skills } from './Skills'
