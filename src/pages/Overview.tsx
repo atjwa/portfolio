@@ -1,7 +1,7 @@
 import PageNames from "../utility";
 import type { PageProps } from "../utility/propTypes";
 
-const Highlights = ({ setPageName }: PageProps) => {
+const Overview = ({ setPageName }: PageProps) => {
     return (
         <article className="mainArticle">
             <section className="mainSectionLeft" onClick={() => setPageName(PageNames.Skills)}>
@@ -97,4 +97,4 @@ const Highlights = ({ setPageName }: PageProps) => {
     );
 };
 
-export default Highlights;
+export default Overview;

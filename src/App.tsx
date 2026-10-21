@@ -5,23 +5,24 @@ import {
   Experience,
   Skills,
   Footer,
-  Highlights,
+  Overview,
 } from './pages'
 import { PageNames } from './utility/pageNames';
 import type { PageName } from './utility/pageNames';
 import type { PageProps } from './utility/propTypes';
+import { NavigationBar } from './components';
 
 function App() {
-  const [pageName, setPageName] = useState<PageName>(PageNames.Highlights);
+  const [pageName, setPageName] = useState<PageName>(PageNames.Overview);
   const pageProps: PageProps = {
     setPageName: setPageName,
   }
-  const [currentPage, setCurrentPage] = useState(<Highlights {...pageProps}/>);
+  const [currentPage, setCurrentPage] = useState(<Overview {...pageProps}/>);
 
   useEffect(() => {
     switch ( pageName ) {
-        case PageNames.Highlights:
-            setCurrentPage(<Highlights {...pageProps} />);
+        case PageNames.Overview:
+            setCurrentPage(<Overview {...pageProps} />);
             break;
         case PageNames.Skills:
             setCurrentPage(<Skills {...pageProps} />);
@@ -33,18 +34,19 @@ function App() {
             setCurrentPage(<Experience {...pageProps} />);
             break;
         default:
-            setCurrentPage(<Highlights {...pageProps} />);
+            setCurrentPage(<Overview {...pageProps} />);
     }
   }, [pageName]);
 
   return (
     <main>
+        <NavigationBar {...pageProps} />
         <h1 className="nameHeader">
             Athan Walker
         </h1>
-        <h1>
+        <h2 style={{ marginTop: '15px'}}>
             Full Stack Web Developer
-        </h1>
+        </h2>
         <img src="src/images/athan_walker.jpeg" alt="Athan Walker" width="210" height="230"/>
         <p>
             Frontend-leaning software engineer with backend REST API experience. I'm passionate about building durable, user-friendly and modern web applications.

@@ -1,7 +1,7 @@
 export const PageNames = {
     Education: 'Education',
     Experience: 'Experience',
-    Highlights: 'Highlights',
+    Overview: 'Overview',
     Skills: 'Skills',
 };
 
