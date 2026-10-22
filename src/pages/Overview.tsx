@@ -1,10 +1,7 @@
-import PageNames from "../utility";
-import type { PageProps } from "../utility/propTypes";
-
-const Overview = ({ setPageName }: PageProps) => {
+const Overview = () => {
     return (
         <article className="mainArticle">
-            <section className="mainSectionLeft" onClick={() => setPageName(PageNames.Skills)}>
+            <section className="mainSectionLeft">
                 <h2>
                     <ins>Skills</ins>
                 </h2>
@@ -35,7 +32,7 @@ const Overview = ({ setPageName }: PageProps) => {
                     </dd>
                 </dl>
             </section>
-            <section className="mainSectionCenter" onClick={() => setPageName(PageNames.Experience)}>
+            <section className="mainSectionCenter">
                 <h2>
                     <ins>Experience</ins>
                 </h2>
@@ -66,7 +63,7 @@ const Overview = ({ setPageName }: PageProps) => {
                     </dd>
                 </dl>
             </section>
-            <section className="mainSectionRight" onClick={() => setPageName(PageNames.Education)}>
+            <section className="mainSectionRight">
                 <h2>
                     <ins>Education</ins>
                 </h2>

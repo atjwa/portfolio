@@ -61,6 +61,39 @@
   box-sizing: border-box;
 }
 
+.navigationButton {
+  background: none;
+  border: none;
+  color: var(--text-h);
+  font-size: 18px;
+  cursor: pointer;
+  padding: 8px 16px;
+  transition: color 0.3s;
+
+  &:hover {
+    color: var(--accent);
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+}
+
+.navigationButtonSelected {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 18px;
+  cursor: pointer;
+  padding: 8px 16px;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+}
+
 body {
   margin: 0;
 }
