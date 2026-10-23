@@ -1,6 +1,9 @@
+import { SecondaryHeader } from "../components";
+import { PageNames } from "../utility";
+
 const Skills = () => {
     return (<>
-        <h2>Skills</h2>
+        <SecondaryHeader pageName={PageNames.Skills}/>
         <p>Here is some skills information.</p>
     </>);
 };

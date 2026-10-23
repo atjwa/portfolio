@@ -1,5 +1,5 @@
 import type { NavigationBarProps } from "./navigationProps";
-import PageNames from "../../utility";
+import { PageNames } from "../../utility";
 import NavigationButton from "./NavigationButton";
 
 const NavigationBar = ({ pageName, setPageName }: NavigationBarProps) => {

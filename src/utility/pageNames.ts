@@ -1,4 +1,4 @@
-export const PageNames = {
+const PageNames = {
     Education: 'Education',
     Experience: 'Experience',
     Overview: 'Overview',
