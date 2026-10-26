@@ -234,23 +234,42 @@ img {
 .secondaryHeader {
   display: flex;
   flex-direction: row;
-  margin-left: 20px;
-}
-
-.secondaryHeaderText {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin-left: 20px;
+  margin-bottom: 50px;
 }
 
 .secondaryNameHeader {
-  font-size: 50px;
-  margin-bottom: 0px;
+  font-size: 30px;
+  margin-bottom: 5px;
+  margin-top: 20px;
   color: #b3a598;
+  text-align: left;
+}
+
+.secondaryHeaderImage-div {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  border-radius: 20px;
 }
 
 .secondaryPageHeader {
-  font-size: 40px;
+  font-size: 80px;
   color: #da8add;
+  display: flex;
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.subsection-divider {
+  border: 1px dashed #b3a598;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.subsection-left {
+  text-align: left;
 }
