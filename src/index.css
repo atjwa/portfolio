@@ -61,36 +61,14 @@
   box-sizing: border-box;
 }
 
-.navigationButtonSelected,
-.navigationButton {
-  background: none;
-  border: none;
-  display: grid;
-  color: var(--text-h);
-  font-size: 18px;
-  cursor: pointer;
-  /* padding: 8px 16px; */
-  transition: color .6s;
 
-  &:hover {
-    color: var(--accent);
-  }
-
-  @media (max-width: 1024px) {
-    font-size: 16px;
-    padding: 6px 12px;
-  }
-}
-
-.navigationButtonSelected {
-  color: var(--accent);
-  font-size: 22px;
-  cursor: pointer;
-  /* padding: 8px 16px; */
-}
 
 body {
   margin: 0;
+}
+
+button {
+  cursor: pointer;
 }
 
 h1,
@@ -220,10 +198,34 @@ img {
 .navigationBar {
   display: flex;
   justify-content: center;
-  gap: 20px;
   margin-bottom: 20px;
   grid-template-columns: auto auto auto auto;
   grid-gap: 5rem;
+}
+
+.navigationButtonSelected,
+.navigationButton {
+  background: none;
+  border: none;
+  display: grid;
+  color: var(--text-h);
+  font-size: 18px;
+  /* padding: 8px 16px; */
+  transition: color .6s;
+
+  &:hover {
+    color: var(--accent);
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+}
+
+.navigationButtonSelected {
+  text-decoration: underline;
+  /* padding: 8px 16px; */
 }
 
 .footer {
@@ -238,7 +240,7 @@ img {
 }
 
 .secondaryNameHeader {
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 5px;
   margin-top: 20px;
   color: #b3a598;
@@ -272,4 +274,29 @@ img {
 
 .subsection-left {
   text-align: left;
+  width: 100%;
+}
+
+.subsection-left-button {
+  background: none;
+  border: none;
+  text-align: left;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 1s;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.25);
+    transition: 1s;
+  }
+
+  &.active {
+    background: rgba(0, 0, 0, 0.25);
+  }
+}
+
+.subsection-left-content {
+  padding: 20px;
+
 }
