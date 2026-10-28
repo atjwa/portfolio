@@ -1,4 +1,6 @@
-const Overview = () => {
+import { PageNames } from "../utility";
+
+const Overview = ({ setPageName }: { setPageName: (pageName: string) => void }) => {
     return (
         <>
             <h1 className="nameHeader">
@@ -13,7 +15,7 @@ const Overview = () => {
             </p>
             <hr />
             <article className="mainArticle">
-                <section className="mainSectionLeft">
+                <section className="mainSectionLeft" onClick={() => setPageName(PageNames.Skills)}>
                     <h2>
                         <ins>Skills</ins>
                     </h2>
@@ -44,7 +46,7 @@ const Overview = () => {
                         </dd>
                     </dl>
                 </section>
-                <section className="mainSectionCenter">
+                <section className="mainSectionCenter" onClick={() => setPageName(PageNames.Experience)}>
                     <h2>
                         <ins>Experience</ins>
                     </h2>
@@ -75,7 +77,7 @@ const Overview = () => {
                         </dd>
                     </dl>
                 </section>
-                <section className="mainSectionRight">
+                <section className="mainSectionRight" onClick={() => setPageName(PageNames.Education)}>
                     <h2>
                         <ins>Education</ins>
                     </h2>

@@ -13,17 +13,20 @@ import type { NavigationBarProps } from './components';
 import { NavigationBar } from './components';
 
 function App() {
-    const [currentPage, setCurrentPage] = useState(<Overview />);
     const [pageName, setPageName] = useState<PageName>(PageNames.Overview);
+    const overviewPageProps = {
+        setPageName: setPageName,
+    }
+    const [currentPage, setCurrentPage] = useState(<Overview {...overviewPageProps} />);
     const navigationBarProps: NavigationBarProps = {
         pageName: pageName,
         setPageName: setPageName
-    }
+    };
 
     useEffect(() => {
         switch ( pageName ) {
             case PageNames.Overview:
-                setCurrentPage(<Overview />);
+                setCurrentPage(<Overview {...overviewPageProps} />);
                 break;
             case PageNames.Skills:
                 setCurrentPage(<Skills />);
@@ -35,7 +38,7 @@ function App() {
                 setCurrentPage(<Experience />);
                 break;
             default:
-                setCurrentPage(<Overview />);
+                setCurrentPage(<Overview {...overviewPageProps} />);
         }
     }, [pageName]);
 

@@ -5,7 +5,7 @@ const Footer = () => {
                 <ins>Contact me</ins>
             </h2>
             <span>
-                Email:  athanjwalker@gmail.com
+                Email:  <b>athanjwalker@gmail.com</b>
             </span>
             <br />
             <span>
