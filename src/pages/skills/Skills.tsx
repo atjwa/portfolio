@@ -11,41 +11,59 @@ const Skills = () => {
             className="subsection-left"
             description="Experienced in building responsive and interactive web applications using modern front-end technologies."
         >
-            <Subsection
-                title="React"
-                className="subsection-right"
-                description="Proficient in React, including component-based architecture, state management, and integration with modern development tools."
-            >
-                <p></p>
+            <Subsection className="subsection-center" title="Languages">
+                <Subsection
+                    title="TypeScript"
+                    className="subsection-right"
+                    description="Proficient in TypeScript, including type safety, interfaces, and integration with modern development tools."
+                >
+                    <p></p>
+                </Subsection>
+                <Subsection
+                    title="JavaScript"
+                    className="subsection-right"
+                    description="Proficient in JavaScript, including ES6+ features, asynchronous programming, and DOM manipulation."
+                >
+                    <p></p>
+                </Subsection>
+                <Subsection title="HTML" className="subsection-right" description="Proficient in HTML, including semantic markup and accessibility best practices.">
+                    <p></p>
+                </Subsection>
             </Subsection>
-
-            <Subsection
-                title="JavaScript"
-                className="subsection-right"
-                description="Proficient in JavaScript, including ES6+ features, asynchronous programming, and DOM manipulation."
-            >
-                <p>HTML, CSS, JavaScript, React</p>
+            <Subsection className="subsection-center" title="Styling">
+                <Subsection
+                    title="CSS"
+                    className="subsection-right"
+                    description="Proficient in CSS, including modern layout techniques and responsive design."
+                >
+                    <p></p>
+                </Subsection>
             </Subsection>
-            <Subsection
-                title="TypeScript"
-                className="subsection-right"
-                description="Proficient in TypeScript, including type safety, interfaces, and integration with modern development tools."
-            >
-                <p></p>
-            </Subsection>
-            <Subsection
-                title="HTML & CSS"
-                className="subsection-right"
-                description="Proficient in HTML and CSS, including modern layout techniques and responsive design."
-            >
-                <p></p>
+            <Subsection className="subsection-center" title="Frameworks & Libraries">
+                <Subsection
+                    title="React"
+                    className="subsection-right"
+                    description="Proficient in React, including component-based architecture, state management, and integration with modern development tools."
+                >
+                    <p></p>
+                </Subsection>
             </Subsection>
             <Subsection
                 title="Accessibility"
-                className="subsection-right"
-                description="Proficient in creating accessible web applications that comply with WCAG and WAI-ARIA guidelines."
+                className="subsection-center"
             >
-                <p></p>
+                <Subsection
+                    title="WCAG"
+                    className="subsection-right"
+                >
+                    <p></p>
+                </Subsection>
+                <Subsection
+                    title="WAI-ARIA"
+                    className="subsection-right"
+                >
+                    <p></p>
+                </Subsection>
             </Subsection>
         </Subsection>
         <Subsection
@@ -57,14 +75,12 @@ const Skills = () => {
             <Subsection
                 title="Java"
                 className="subsection-right"
-                description="Experienced in Java, including object-oriented programming, data structures, and algorithms."
             >
                 <p>Java, Spring, Hibernate, SQL</p>
             </Subsection>
             <Subsection
                 title="REST API Design & Development"
                 className="subsection-right"
-                description="Experienced in designing and developing RESTful APIs using Java and related technologies."
             >
                 <p>Validate, Read, Save, Submit</p>
             </Subsection>

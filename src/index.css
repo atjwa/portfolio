@@ -224,8 +224,8 @@ img {
   border: none;
   display: grid;
   color: var(--text-h);
-  font-size: 18px;
-  /* padding: 8px 16px; */
+  font-size: 20px;
+  font-weight: bold;
   transition: color .6s;
 
   &:hover {
@@ -240,7 +240,6 @@ img {
 
 .navigationButtonSelected {
   text-decoration: underline;
-  /* padding: 8px 16px; */
 }
 
 .footer {
@@ -303,9 +302,13 @@ img {
 .subsection-left-button {
   text-align: left;
 }
+.subsection-center-button {
+  text-align: center;
+}
 
 .subsection-right-button,
-.subsection-left-button {
+.subsection-left-button,
+.subsection-center-button {
   background: none;
   border: none;
   width: 100%;
@@ -324,7 +327,8 @@ img {
 }
 
 .subsection-right-content,
-.subsection-left-content {
+.subsection-left-content,
+.subsection-center-content {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 40px;
