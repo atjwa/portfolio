@@ -6,6 +6,7 @@ import {
     Skills,
     Footer,
     Overview,
+    Resume,
 } from './pages'
 import { PageNames } from './utility';
 import type { PageName } from './utility';
@@ -36,6 +37,9 @@ function App() {
                 break;
             case PageNames.Experience:
                 setCurrentPage(<Experience />);
+                break;
+            case PageNames.Resume:
+                setCurrentPage(<Resume />);
                 break;
             default:
                 setCurrentPage(<Overview {...overviewPageProps} />);

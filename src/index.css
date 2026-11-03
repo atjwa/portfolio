@@ -247,6 +247,10 @@ img {
   margin-top: 20px;
 }
 
+.resumeSection {
+  height: 100%;
+}
+
 .secondaryHeader {
   display: flex;
   flex-direction: row;

@@ -3,6 +3,7 @@ const PageNames = {
     Experience: 'Experience',
     Overview: 'Overview',
     Skills: 'Skills',
+    Resume: 'Resume',
 };
 
 export type PageName = (typeof PageNames)[keyof typeof PageNames];

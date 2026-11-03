@@ -9,6 +9,7 @@ const NavigationBar = ({ pageName, setPageName }: NavigationBarProps) => {
             <NavigationButton pageName={pageName} buttonPageName={PageNames.Skills} setPageName={setPageName} />
             <NavigationButton pageName={pageName} buttonPageName={PageNames.Education} setPageName={setPageName} />
             <NavigationButton pageName={pageName} buttonPageName={PageNames.Experience} setPageName={setPageName} />
+            <NavigationButton pageName={pageName} buttonPageName={PageNames.Resume} setPageName={setPageName} />
         </nav>
     );
 };
