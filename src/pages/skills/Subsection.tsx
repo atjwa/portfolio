@@ -6,7 +6,7 @@ const Subsection = ({ title, className, hasDivider, description, children }: { t
     return (
         <div className={className}>
             <button className={`${className}-button ${buttonClassName}`} onClick={() => setIsOpen(!isOpen)}>
-                <h2 className={className}>{title}</h2>
+                <h2 className={`${className}-title`}>{title}</h2>
                 {description && <p>{description}</p>}
             </button>
            

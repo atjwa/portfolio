@@ -7,7 +7,7 @@ const Skills = () => {
         <SecondaryHeader pageName={PageNames.Skills}/>
         <Subsection
             title="Front-End Development"
-            hasDivider={true}
+            hasDivider={false}
             className="subsection-left"
             description="Experienced in building responsive and interactive web applications using modern front-end technologies."
         >
@@ -68,28 +68,43 @@ const Skills = () => {
         </Subsection>
         <Subsection
             title="Back-End Development"
-            hasDivider={true}
+            hasDivider={false}
             className="subsection-left"
             description="Skilled in server-side development, database management, and API integration."
         >
             <Subsection
-                title="Java"
-                className="subsection-right"
+                title="Languages"
+                className="subsection-center"
             >
-                <p>Java, Spring, Hibernate, SQL</p>
+                <Subsection
+                    title="Java"
+                    className="subsection-right"
+                >
+                    <p>Java, Spring, Hibernate, SQL</p>
+                </Subsection>
             </Subsection>
             <Subsection
-                title="REST API Design & Development"
-                className="subsection-right"
+                title="API Design"
+                className="subsection-center"
             >
-                <p>Validate, Read, Save, Submit</p>
+                <Subsection
+                    title="REST API Design & Development"
+                    className="subsection-right"
+                >
+                    <p>Validate, Read, Save, Submit</p>
+                </Subsection>
             </Subsection>
             <Subsection
-                title="JWT Authentication"
-                className="subsection-right"
-                description="Experienced in implementing JWT-based authentication for RESTful APIs."
+                title="Authentication & Security"
+                className="subsection-center"
             >
-                <p>Java, Spring, Hibernate, SQL</p>
+                <Subsection
+                    title="JWT Authentication"
+                    className="subsection-right"
+                    description="Experienced in implementing JWT-based authentication for RESTful APIs."
+                >
+                    <p>Java, Spring, Hibernate, SQL</p>
+                </Subsection>
             </Subsection>
         </Subsection>
         <Subsection
@@ -99,11 +114,65 @@ const Skills = () => {
             description="Familiar with DevOps practices and cloud platforms for deployment and management."
         >
             <Subsection
-                title="Docker"
-                className="subsection-right"
-                description="Experienced in containerizing applications using Docker for consistent deployments."
+                title="CI/CD & Build Automation"
+                className="subsection-center"
             >
-                <p>Docker, Kubernetes, AWS, Azure</p>
+                <Subsection
+                    title="GitHub Actions"
+                    className="subsection-right"
+                >
+                    <p></p>
+                </Subsection>
+                <Subsection
+                    title="Jenkins"
+                    className="subsection-right"
+                >
+                    <p></p>
+                </Subsection>
+            </Subsection>
+            <Subsection
+                title="Release & Deployment Orchestration"
+                className="subsection-center"
+            >
+                <Subsection
+                    title="XLR (XL Release)"
+                    className="subsection-right"
+                >
+                    <p></p>
+                </Subsection>
+            </Subsection>
+            <Subsection
+                title="Monitoring & Observability"
+                className="subsection-center"
+            >
+                <Subsection
+                    title="Splunk"
+                    className="subsection-right"
+                >
+                    <p></p>
+                </Subsection>
+            </Subsection>
+            <Subsection
+                title="Product Analytics & User Behavior"
+                className="subsection-center"
+            >
+                <Subsection
+                    title="FullStory"
+                    className="subsection-right"
+                >
+                    <p></p>
+                </Subsection>
+            </Subsection>
+            <Subsection
+                title="Feature Management & Controlled Releases"
+                className="subsection-center"
+            >
+                <Subsection
+                    title="Feature flags"
+                    className="subsection-right"
+                >
+                    <p></p>
+                </Subsection>
             </Subsection>
         </Subsection>
     </>);

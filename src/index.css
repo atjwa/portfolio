@@ -273,13 +273,13 @@ img {
 }
 
 .secondaryPageHeader {
-  font-size: 80px;
+  font-size: 125px;
   color: #da8add;
   display: flex;
-  /* text-align: center; */
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  width: 60%;
+  padding-left: 60px;
+  width: 100%;
 }
 
 .subsection-divider {
@@ -292,12 +292,22 @@ img {
 
 .subsection-left {
   text-align: left;
-  width: 100%;
+  margin-bottom: 40px;
 }
 
 .subsection-right {
   text-align: right;
+}
+
+.subsection-center {
+  text-align: center;
+}
+
+.subsection-center,
+.subsection-left,
+.subsection-right {
   width: 100%;
+  overflow: hidden;
 }
 
 .subsection-right-button {
@@ -308,6 +318,19 @@ img {
 }
 .subsection-center-button {
   text-align: center;
+}
+
+.subsection-right-title {
+  text-align: right;
+  font-size: 24px;
+}
+.subsection-left-title {
+  text-align: left;
+  font-size: 36px;
+}
+.subsection-center-title {
+  text-align: center;
+  font-size: 30px;
 }
 
 .subsection-right-button,
@@ -337,5 +360,4 @@ img {
   padding-bottom: 20px;
   padding-left: 40px;
   padding-right: 40px;
-
 }
