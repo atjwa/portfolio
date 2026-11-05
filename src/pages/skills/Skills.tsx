@@ -1,6 +1,5 @@
-import { SecondaryHeader } from "../../components";
+import { SecondaryHeader, Subsection } from "../../components";
 import { PageNames } from "../../utility";
-import Subsection from "./Subsection";
 
 const Skills = () => {
     return (<>
