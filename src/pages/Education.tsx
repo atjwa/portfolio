@@ -4,7 +4,11 @@ import { PageNames } from "../utility";
 const Education = () => {
     return (<>
         <SecondaryHeader pageName={PageNames.Education}/>
-        <p>Here is some education information.</p>
+        <img src="./src/images/UofA.jpg" alt="Education" />
+        <h1>Masters</h1>
+        <p> in Computer Science</p>
+        <h1>Bachelors</h1>
+        <p> in Computer Science</p>
     </>);
 };
 

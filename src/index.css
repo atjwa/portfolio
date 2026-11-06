@@ -1,3 +1,7 @@
+html {
+  scrollbar-gutter: stable;
+}
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -230,6 +234,7 @@ img {
 
   &:hover {
     color: var(--accent);
+    transition: 1s;
   }
 
   @media (max-width: 1024px) {
@@ -338,18 +343,20 @@ img {
 .subsection-center-button {
   background: none;
   border: none;
-  width: 100%;
+  width: 90%;
   padding: 10px;
   border-radius: 20px;
   transition: 1s;
 
   &:hover {
     background: rgba(0, 0, 0, 0.25);
+    width: 100%;
     transition: 1s;
   }
 
   &.active {
     background: rgba(0, 0, 0, 0.25);
+    width: 100%;
   }
 }
 
